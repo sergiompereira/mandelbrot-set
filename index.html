@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt">
+	<head>
+		<meta  charset="utf-8" />
+	
+	
+		<title></title>
+		<style> 
+			body{
+				text-align:center;
+				background-color:#000;
+				font-family:Helvetica, Arial, sans-serif;
+			}
+			body > div {
+				width:800px;
+				margin:0 auto;
+				text-align:left;
+			}
+			canvas{
+				margin:0 auto;
+				border:1px solid #666;
+			}
+			input{
+				background-color:#444;
+				color:#f0f0f0;
+				border:none;
+				padding:2px;
+				margin-bottom:10px;
+			}
+			input[type=button]{
+				background-color:#666;
+			}
+			label{
+				color:#f0f0f0;
+			}
+			
+			
+		</style>
+		
+	</head>
+	<body>
+		
+		<div>
+			<form id="controls" name="controls">
+				<label for="zoom">Zoom:</label>
+				<input id="zoom" type="text" name="zoom" value="1"/>
+				<label for="zoom">Ox:</label>
+				<input id="zoom" type="text" name="ox" value="250"/>
+				<input id="zoom" type="button" name="oxl" value="<"/>
+				<input id="zoom" type="button" name="oxm" value=">"/>
+				<label for="zoom">Oy:</label>
+				<input id="zoom" type="text" name="oy" value="300"/>
+				<input id="zoom" type="button" name="oyl" value="<"/>
+				<input id="zoom" type="button" name="oym" value=">"/>
+				<input type="submit" value="Render"/>
+			</form>
+			<canvas width="800" height="600"></canvas>
+		</div>
+		<script type="text/javascript" src="js/libs/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	</body>
+</html>
